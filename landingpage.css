@@ -1,0 +1,152 @@
+body{
+    font-family: candara;
+}
+.bg_img{
+    background-image: url("anchor1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_menu{
+    background-color: teal;
+    border-radius: 10px;
+    margin: -15px;
+}
+
+.nav_list{
+    list-style: none;
+    display: flex;
+    height: 80px;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 600px;
+    font-variant:small-caps;
+    font-weight: bolder;
+    
+}
+
+
+.logo_header{
+    float: left;
+    width: 120px;
+    height: 80px;
+    
+    margin: 10px;
+    padding: 10px;
+
+}
+li {
+    text-decoration: none;
+    padding: 7px 10px 5px 10px;
+    margin:  15px 15px 25px 15px;
+
+}
+.hero{
+    margin-top: -10px;
+    
+}
+.hero button{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    background-color: teal;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+img{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:auto;
+    text-align: center;
+    justify-content: center;
+    height: 410px;
+    width: 100%;
+    
+    
+}
+
+.hero h2{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-weight: bolder;
+    font-size: xx-large;
+   
+}
+.hero_p{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -25%);
+    width: 400px;
+    background-color: teal;
+    background-image: linear-gradient(rgba(238, 235, 235, 1), rgba(0, 0, 0, 0)), url("speed.jpg");
+}
+
+
+.services{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+.sub_services {
+    background-color: #d2d2d2;
+    padding: 20px;
+    justify-content: center;
+}
+.services button{
+    background-color: teal;
+    border-radius: 6px;
+    color:#fff;
+    border: none;
+    padding: 10px;
+}
+.services_p {
+    padding: 5px 15px 10px 10px;
+    margin: 5px 20px 7px 7px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+a:hover{
+    padding:10px;
+    
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    height:auto;
+    justify-content: center;
+    padding: 5px;
+    
+}
+.li_footer{
+    text-decoration: none;
+    padding: 2px;
+    margin:  3px;
+    padding-left: 100px;
+    padding-right: 100px;
+    list-style: none;
+}
+footer p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.footer_list{
+    display: flex;
+    flex-direction: row;
+}
