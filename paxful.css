@@ -1,0 +1,414 @@
+body{
+    font-family: Open Sans,sans-serif !important;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0px 20px;
+}
+.logo img{
+    width: 100%;
+    height:20px;
+}
+.nav_menu{
+    padding:0px 20px;
+    margin: 0px 20px;
+    
+}
+.nav_menu a{
+    text-decoration: none;
+    justify-content: center;
+    text-align: center !important;
+    align-items: center;
+    color: #333;
+    font-weight: 500;
+    margin: 0px 10px;
+}
+.nav_menu a:hover{
+    color: #612c95;
+}
+
+.nav_links{
+    text-decoration: none;
+    font-weight: 500;
+    border: 0;
+    color: #fff;
+    
+
+}
+.nav_links .nav_login{
+    text-decoration: none;
+    font-weight: 500;
+    border: 0;
+    color: #333;
+
+}
+.nav_links .nav_register {
+    background-color: #00a5ef;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.nav_register:hover{
+    background-color: #025880;
+}
+.hero_banner{
+    background-color: #531eba;
+    color: #fff;
+    margin: -5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.hero_banner button{
+    cursor: pointer;
+}
+
+.hero_banner h1{
+    font-size: 75px !important;
+    font-weight: 800;
+    line-height: 1.15 !important;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.hero_banner p{
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 200;
+    max-width: 950px;
+    margin: 0 auto;
+}
+.hero_banner_inner{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+    margin: 0px 70px;
+    align-items: center;
+    text-align: center;
+}
+
+.form_buy_sell{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}
+.buy_sell{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 30px;
+    margin: 0px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.buy_sell button{
+    padding: 7px 35px;
+    margin: 0px 5px;
+    border-radius: 5px;
+}
+
+.buy_sell1{
+    background-color: #00a5ef;
+    border: 1px solid #d8d8d8;
+    color: #fff;
+}
+.buy_sell1:hover{
+    background-color: #025880;
+}
+.buy_sell2{
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+}
+.buy_sell2:hover{
+    background-color: #f0ecec;
+}
+.form_buy_sell{
+    background-color: #fff;
+    margin:30px 400px;
+    padding: 15px 40px;
+}
+.form_buy_sell select{
+    width: 100%;
+    padding: 20px 30px;
+
+}
+.form_buy_sell a{
+    text-decoration: none;
+    color:#00a5ef;
+}
+.one_btc button{
+    margin: 5px;
+    padding: 5px;
+}
+.one_btc input{
+    margin: 5px;
+    padding: 15px;
+    width: 100%;
+}
+.one_btc h4{
+    color: #333;
+    text-align: left;
+    margin-bottom: 0px;
+}
+.one_btc p{
+    color: #d6d4d4;
+    text-align: left;
+    font-size: 14px;
+}
+.pay_button{
+    display: flex;
+    flex-direction: row;
+}
+.pay_button button{
+    padding: 2px 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+}
+.find_offers{
+    width: 100%;
+    border-radius: 7px;
+    background-color: #00a5ef;
+    border: 1px solid #d8d8d8;
+    color: #fff;
+    padding: 15px !important;
+}
+.ways_to_buy_sell{
+
+}
+.ways_to_buy_sell h2{
+    text-align: center ;
+    font-size: 34px;
+    line-height: 48px;
+    padding: 0px 400px;
+    margin-bottom: 10px;
+}
+.ways_to_buy_sell p{
+    text-align: center ;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0px 350px;
+    margin-top: 0px;
+}
+.ways_to_buy_sell a{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 90px;
+    padding:10px 30px;
+    border-bottom:#00a5ef;
+}
+.ways_to_buy_sell div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 90px;
+    padding:10px 30px;
+    border-bottom:#00a5ef;
+}
+
+.start_trading{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap:wrap; */
+    color: #333;
+    margin: 10px 100px;
+}
+.bank_trans {
+    cursor: pointer;
+    padding: 50px;
+    border: 1px solid #d8d8d8 ;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 13px;
+    width: 100%;
+}
+.bank_trans a{
+    text-decoration: none;
+    color: #333;
+}
+.bank_trans:hover{
+    text-decoration: underline;
+}
+.start_trading_button{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 10px;
+}
+.start_trading_button a{
+    text-decoration: none;
+    background-color: #0688c4;
+    padding: 15px;
+    color: #fff;
+    border-radius: 6px;
+}
+.start_trading_button a:hover{
+    background-color: #00a5ef;
+}
+.media_video{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:10px 50px;
+    margin: 30px 300px;
+}
+.media_video iframe{
+    width: 65%;
+    height: 40%;
+    
+}
+.partners{
+    display: flex;
+    flex-direction: row;
+    padding:0px 50px;
+    margin: 10px 50px;
+}
+.partners img{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    margin: 0px 10px 0px 25px;
+    width: 15%;
+    
+}
+.your_bitcoin{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 50px;
+    padding:20px 50px;
+
+}
+.count_numbers{
+    display: flex;
+    flex-direction: row;
+}
+.count_numbers_1, .count_numbers_2, .count_numbers_3{
+    background-color: #f9f7fb;
+    border-radius: 4px;
+    width: 100%;
+    margin: 30px 20px;
+    padding: 10px;
+}
+.count_numbers_1 h2, .count_numbers_2 h2, .count_numbers_3 h2{
+    background-color: #f9f7fb;
+    color: #612c95;
+    border-radius: 4px;
+    margin: 30px 20px;
+    padding: 10px;
+    font-weight: 800;
+}
+.testimonials{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonials_box{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 250px;
+    text-align: left !important;
+}
+.testimonials_box a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color:#0052cc;
+    text-decoration: none;
+}
+.testimonials_box a:hover{
+    color:#000;
+    text-decoration: underline;
+}
+.testimonials_box_1, .testimonials_box_2{
+    margin: 10px 20px;
+    padding: 30px;
+    border: 1px solid #d6d4d4;
+    border-radius: 5px;
+    color: #333;
+}
+.testimonials_box button{
+    cursor: pointer;
+    font-size: .875rem;
+    line-height: 24px;
+    background: none;
+    border: none;
+    color: #0052cc;
+    font-weight: 400;
+    min-height: 0px;
+    padding: 0px;
+}
+.financial_system{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+.financial_system_category{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 50px;
+}
+.financial_system_category_2{
+    display: flex;
+    flex-direction: row;
+    margin-right:50px;
+    margin-top: 50px !important;
+    justify-content: center;
+    align-content: center;
+}
+.financial_system_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 40px;
+    padding: 0px 30px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333;
+    word-wrap: break-word;
+}
+.ready_to_get_started{
+/*    background-image: url("get-started-bg.webp");
+    background-position: bottom;
+    background-size: contain;
+*/
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding:20px 50px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #333;
+}
+.ready_to_get_started p{
+    margin-bottom: 40px;
+}
+.ready_to_get_started img{
+    justify-items: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 20%;
+}
