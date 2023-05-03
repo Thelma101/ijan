@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONSTRUCT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/landing-four.css" type="text/css">
+    <style>
+        body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top__nav{
+    height: 60px;
+    background-color: #1181c2;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top__nav__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top__nav__item div{
+    padding: 0px 10px;
+}
+
+.top__nav__item i{
+    padding: 0px 10px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.lower__nav{
+    height: 120px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.lower__nav a{
+ padding: 0px 30px;
+ font-size: 18px;
+ text-decoration: none;
+ font-weight: 700;
+ color: #010D14;
+}
+
+.lower__nav a:hover{
+ color: #F7940F;
+}
+.top__nav__item .k_i{
+    color: #F7940F;
+}
+
+.active{
+    color: #F7940F !important;
+}
+
+.let__talk__button{
+    padding: 12px 30px !important;
+    background-color: #F7940F;
+    color: #010D14;
+    transition: 1s background-color;
+}
+
+.let__talk__button:hover{
+    background-color:  #010D14;
+    color: #ffffff !important;
+}
+
+.about__section{
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-image: url(../images/konstruck/about_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about__section__item{
+    width: 45%;
+}
+
+.why__choose__use{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.why__choose__use p{
+    padding: 0px 10px;
+}
+.why__choose__use i{
+    color: #F7940F;
+}
+
+.about__section__item h3{
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.leverage{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sub_section_about{
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+}
+
+.circle__div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px;
+}
+
+.circle__div div i{
+    background-color: #F7940F;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.circle__div div span{
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+.signature{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.signature a {
+    background-color:#F7940F;
+    padding: 20px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#010D14;
+}
+
+.signature div{
+    margin: 0 auto;
+}
+
+/* service sstyles */
+
+.service_section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    background-color: #E8EAEE;
+    height: 1200px;
+    position: relative;
+}
+
+.image__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image__container .image__container__item{
+    /* width: 25%; */
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../images/konstruck/servic_1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+ 
+}
+
+.overlay{
+
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition:  .5s  ease;
+}
+
+.text{
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image__container__item:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+.image__settings{
+    position: absolute;
+    height: 20%;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+}
+
+.image__settings div{
+    font-size: 30px;
+    background-color: #F7940F;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image__settings p{
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+/* .image__container__item img{
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+} */
+
+.what__we__do{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.what__we__do i{
+    color: #F7940F;
+}
+
+.what__we__do p{
+    padding: 0px 10px; 
+}
+
+.develop_h3{
+    font-size:40px;
+}
+
+/* please remove */
+
+.hello{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    color: white;
+    position: relative;
+}
+
+.hello .ht{
+position: absolute;
+ background: #ffffff;
+ color: black !important;
+ top: 40%;
+ width: 30%;
+ height: 20%;
+ left: 20%;
+}
+
+.hello .hb{
+    position: absolute;
+   
+  
+    background-color: yellow;
+    top: 41%;
+    left: 45%;
+    width: 30%;
+    height: 20%;
+
+
+}
+
+
+/* Extra small screen devices(pphones , 600px below */
+@media only screen and (max-width:600px){
+    .top__nav{
+       visibility: hidden;
+    }
+
+    .lower__nav{
+        display: none;
+        height: 600px;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .lower__nav a{
+        display: block;
+        padding: 20px 0px;
+       
+       }
+
+       .about__section{
+        height: 600px;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .about__section__item{
+        width: 100%;
+    }
+    .develop_h3{
+        font-size:20px;
+        color: white;
+    }
+
+    
+
+.what__we__do i{
+    color: #ffffff;
+}
+
+.what__we__do p{
+    padding: 0px 10px; 
+    color: white;
+}
+
+.service_section{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    background-color: #E8EAEE;
+    height: 1000px;
+}
+
+
+  
+}
+
+/* Small devices (portrait tablests and large phone . 600px and above) */
+@media only screen and (min-width:600px){
+    /* ALL YoUR CSS */
+}
+
+/* Medium scrreens , landscape tablest, 768px */
+@media only screen and (min-width:768px){
+    /* ALL YoUR CSS */
+}
+
+/* Large devices , laptops/desktops */
+@media only screen and (min-width:992px){
+    /* ALL YoUR CSS */
+}
+
+/* Extra large scrrens */
+@media only screen and (min-width:1200px){
+    /* ALL YoUR CSS */
+}
+
+
+@media only screen and (min-width:3000px){
+    /* ALL YoUR CSS */
+}
+
+</style>
+    </head>
+<body>
+    <header>
+        <!-- TOP NAV -->
+        <nav class="top__nav">
+            <!-- TOP NAV ITEM LEFT -->
+            <div class="top__nav__item">
+                    <div>
+                        <i class="fa-solid fa-user k_i"></i>
+                        <span>info@testing.com</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user k_i"></i>
+                        <span> +234 1234567890</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user k_i"></i>
+                        <span>31, Agege, Lagos</span>
+                    </div>
+            </div>
+            <!-- TOP NAV ITEM RIGHT -->
+            <div class="top__nav__item">
+                <div>
+                    <i class="fa-solid fa-user k_i"></i>
+                    <span>Hours: Mon-Fri: 9.00 am - 7.00 pm</span>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- LOWER NAV -->
+        <nav class="lower__nav">
+            <div>
+                <img src="/images/Logo/konstruct.png" alt="Konstrucyt Logo" class="logo">
+            </div>
+            <div>
+                <a href="#" class="active">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="" class="let__talk__button">Lets Talk</a>
+                
+            </div>
+        </nav>
+    </header>
+    <!-- HERO -->
+
+
+    <!-- ABOUT SECTION -->
+    <div class="about__section">
+        <div class="about__section__item">
+            <img src="/images/konstruck/about.png" alt="about Image">
+        </div>
+        <div class="about__section__item">
+            <div class="why__choose__use">
+                <i class="fa-solid fa-dice-four"></i>
+                <p>WHY CHOOSE US</p>
+            </div>
+            
+            <h3>Construction solutions focused future ready</h3>
+            <p class="leverage">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy data foster to collaborative thinking to empowerment..</p>
+            <div class="sub_section_about">
+                <div>
+                    <img src="/images/konstruck/abzt.jpg" alt="sub sec about">
+                </div>
+                <div class="circle__div">
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Pre-construction services</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Pre-construction services</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Pre-construction services</span>
+                    </div>
+                </div>
+            </div>
+            <!-- signature -->
+            <div class="signature">
+                <a href="#">Know More</a>
+                <div>
+                    <img src="/images/konstruck/signeture1.png" alt="signature">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICE SECTION -->
+    <div class="service_section">
+        <!-- row 1 -->
+        <div class="service__section__item">
+            <div class="what__we__do">
+                <i class="fa-solid fa-dice-four"></i>
+                
+                <p>WHAT WE DO</p>
+            </div>
+            <h3 class="develop_h3">Develop comprehensive<br> solutions for each project</h3>
+        </div>
+
+        <!-- row 2 -->
+        <div class="service__section__item">
+            <div class="image__container">
+                <div class="image__container__item">
+                    <div class="image__settings">
+                        <p>General Construction</p>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+                            </p>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image__container__item">
+                    <div class="image__settings">
+                        <p>General Construction</p>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+                            </p>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image__container__item">
+                    <div class="image__settings">
+                        <p>General Construction</p>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                        </div>
+                   
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+                            </p>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image__container__item">
+                    <div class="image__settings">
+                        <p>General Construction</p>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+                            </p>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image__container__item">
+                    <div class="image__settings">
+                        <p>General Construction</p>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+                            </p>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image__container__item">
+                    <div class="image__settings">
+                        <p>General Construction</p>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">
+                            <i class="fa-sharp fa-solid fa-gear"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+                            </p>
+                            <button>READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+    <!-- remove please -->
+    <div class="hello">
+        <div class="ht">
+            <h1>HELLO HELLO</h1>
+        </div>
+        
+        <div class="hb">
+            <h1>HELLO HELLO</h1>
+        </div>
+    </div>
+</body>
+</html>
